@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+}
+#home-title{
+  text-shadow: #f9b3eb 5px 6px 11px;
+}
+#home-title-typed{
+  text-shadow: #E0F7FA 5px 5px 8px;
+}
+h1{
+  text-shadow: #eaa9cb 4px 7px 6px;
+}
+.intro{
+  /* height: 60vh; */
+  height: 25rem;
+  background-image: url('.\assets\Daco_6122373.png');
+  background-repeat: no-repeat;
+  background-attachment:local;
+  /* background-size: 20rem; */
+  background-size: 30rem;
+  background-position:90% -2%;
+  /* background-position: 60% 20%; */
+background-blend-mode:lighten;
+  /* background-color: rgba(77, 77, 175, 0.724); */
+}
+@media only screen and (max-width:473px){
+  .intro {
+    width: fit-content;
+  }
+  #skills{
+    width: auto;
+  }
+  #experience{
+    width: auto;
+  }
+  #contact{
+    width: auto;
+  }
+}
+
+/* a {
+  font-weight: 500;
+  color: #b3b6f9;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+/* .active{
+  color: black !important;
+  background: white !important;
+} */
+body {
+  margin: 0px 0px;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(45deg,blue,rgb(157, 227, 170) 20%,black 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0px 0px;
+}
+.my-nav-item{
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 2rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  
+}
+/* .my-nav-item:focus-visible{
+  border-radius: 15px;
+  height: 50px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+} */
+.my-nav-item:hover{
+  color: black;
+  background-color: white;
+  transition: all 200ms ease-in-out;
+}
+.active{
+padding: 5px 15px ;
+  border-radius: 15px;
+width: 5rem;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+ border-color: transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.my-nav-item:focus,
+.my-nav-item:focus-visible {
+  /* outline: 4px auto -webkit-focus-ring-color; */
+  color: red;
+}
+
+

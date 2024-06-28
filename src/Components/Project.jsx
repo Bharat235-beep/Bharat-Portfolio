@@ -1,0 +1,48 @@
+import React from 'react'
+import ProjectCard from './ProjectCard'
+
+const Project = () => {
+  const project=[
+    {
+    title:"Calculator",
+    source:"https://bharat235-beep.github.io/calculator/",
+    image:"https://img.freepik.com/premium-vector/calculator-cartoon-character-dancing-with-cute-face-illustration-hand-drawing-vector_772546-1024.jpg"
+  },
+  {
+    title:"WeatherWave",
+    source:"https://bharat235-beep.github.io/WeatherWave/",
+    image:"https://static.vecteezy.com/system/resources/thumbnails/033/352/730/small/sunny-sky-background-sunny-day-background-sun-wallpaper-sunny-sky-landscape-blue-sky-background-summer-sky-background-ai-generative-photo.jpg"
+  },
+  {
+    title:"Text2Voice",
+    source:"https://bharat235-beep.github.io/Text2Voice/",
+    image:"https://www.vidnoz.com/bimg/realistic-text-to-speech.webp"
+  },
+  {
+    title:"Voice2Text",
+    source:"https://bharat235-beep.github.io/Voice2Text/",
+    image:"https://tj-web-prod.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/09/Speech-to-text-apps_Feature.jpg"
+  },
+  {
+    title:"TextUtils",
+    source:"https://bharat235-beep.github.io/text-utils/",
+    image:"https://onlinetexttools.com/images/legends/text/what-are-online-text-tools.png"
+  }
+]
+  return (
+    <div id='projects' className=' flex flex-col  place-items-center scroll-mt-12'>  
+<h1 className=' text-center text-white '>My Projects</h1>
+<div className='text-white mb-10'>Lorem ipsum dolor sit amet consectetur.</div>
+      <div className='flex flex-row justify-center items-center flex-wrap'>
+      {
+        project.map((project)=>{
+         return <ProjectCard key={project.source} image={project.image} source={project.source} title={project.title} />
+        })
+      }
+    </div>
+    </div>
+
+  )
+}
+
+export default Project
