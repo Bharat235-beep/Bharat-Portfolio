@@ -42,19 +42,7 @@ background-blend-mode:lighten;
   }
 }
 
-/* a {
-  font-weight: 500;
-  color: #b3b6f9;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
 
-/* .active{
-  color: black !important;
-  background: white !important;
-} */
 body {
   margin: 0px 0px;
   display: flex;
@@ -74,13 +62,7 @@ body {
   text-decoration: none;
   
 }
-/* .my-nav-item:focus-visible{
-  border-radius: 15px;
-  height: 50px;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-} */
+
 .my-nav-item:hover{
   color: black;
   background-color: white;

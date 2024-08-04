@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import SkillProgress from './SkillProgress';
+import { useInView,motion } from 'framer-motion';
 const Skills = () => {
+  const ref=useRef(null);
+  const isInView=useInView(ref,{margin:'0px',once:true})
 
   return (
-    <div id='skills' className=' h-fit  flex flex-row flex-wrap justify-around place-items-center scroll-mt-12 mb-40'>
+    <motion.div id='skills' className=' h-fit  flex flex-row flex-wrap justify-around place-items-center scroll-mt-12 mb-40'
+    ref={ref} initial={{opacity:0,x:-200}}
+    animate={isInView?{opacity:1,x:0}:{opacity:0,x:-200}}
+    transition={{duration:1.5}}
+    >
         <div className="title text-stone-100 w-screen flex flex-col justify-center place-items-center">
             <h1>My Skills</h1>
             <div className="sub-title w-2/3 text-center">
@@ -17,7 +24,7 @@ const Skills = () => {
         <SkillProgress now={70} skill={'Node js'}/>
         <SkillProgress now={70} skill={'MongoDb'}/>
         <SkillProgress now={60} skill={'Express js'}/>
-    </div>
+    </motion.div>
   )
 }
 

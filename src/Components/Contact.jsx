@@ -1,10 +1,13 @@
-import React, {  useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { useInView,motion } from 'framer-motion';
 export default function Contact() {
   
  const [name,setName]=useState('')
  const [email,setEmail]=useState('')
  const [message,setMessage]=useState('')
+ const ref=useRef(null);
+ const isInView=useInView(ref,{margin:'0px',once:true})
 const sendEmail=(e)=>{
 e.preventDefault();
 const temp_params={
@@ -22,7 +25,13 @@ emailjs.send('service_2zyhus5','template_p7g6l8l',temp_params,'zxwm4x1ESvadjhBRB
 .catch((error)=>{console.log(error)})
 }
   return (
-    <div id='contact' className='flex flex-col place-items-center justify-center mt-5  h-fit scroll-mt-12 text-white'>
+    <motion.div id='contact' className='flex flex-col place-items-center justify-center mt-5  h-fit scroll-mt-12 text-white'
+    ref={ref} initial={{opacity:0,x:400}}
+    animate={isInView?{opacity:1,x:0}:{opacity:0,x:400}}
+    transition={{
+      duration:1.5
+    }}
+    >
       <h1 className='  font-semibold'>Contact Me </h1>
       <div className='mb-10'>Lorem ipsum dolor sit amet consectetur.</div>
       <div className='flex flex-col  w-1/2 place-items-center'>
@@ -48,6 +57,6 @@ emailjs.send('service_2zyhus5','template_p7g6l8l',temp_params,'zxwm4x1ESvadjhBRB
         {/* </fieldset> */}
       </form>
       </div>
-    </div>
+    </motion.div>
   )
 }
