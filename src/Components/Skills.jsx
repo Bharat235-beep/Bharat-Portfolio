@@ -7,8 +7,8 @@ const Skills = () => {
 
   return (
     <motion.div id='skills' className=' h-fit  flex flex-row flex-wrap justify-around place-items-center scroll-mt-12 mb-40'
-    ref={ref} initial={{opacity:0,x:-200}}
-    animate={isInView?{opacity:1,x:0}:{opacity:0,x:-200}}
+    ref={ref} initial={{opacity:0,y:150}}
+    animate={isInView?{opacity:1,y:0}:{opacity:0,y:150}}
     transition={{duration:1.5}}
     >
         <div className="title text-stone-100 w-screen flex flex-col justify-center place-items-center">

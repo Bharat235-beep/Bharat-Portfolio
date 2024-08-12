@@ -26,8 +26,8 @@ emailjs.send('service_2zyhus5','template_p7g6l8l',temp_params,'zxwm4x1ESvadjhBRB
 }
   return (
     <motion.div id='contact' className='flex flex-col place-items-center justify-center mt-5  h-fit scroll-mt-12 text-white'
-    ref={ref} initial={{opacity:0,x:400}}
-    animate={isInView?{opacity:1,x:0}:{opacity:0,x:400}}
+    ref={ref} initial={{opacity:0,y:150}}
+    animate={isInView?{opacity:1,y:0}:{opacity:0,y:150}}
     transition={{
       duration:1.5
     }}
