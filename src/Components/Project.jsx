@@ -3,12 +3,6 @@ import ProjectCard from './ProjectCard'
 
 const Project = () => {
   const project=[
-    {
-    title:"Calculator",
-    source:"https://bharat235-beep.github.io/calculator/",
-    image:"https://img.freepik.com/premium-vector/calculator-cartoon-character-dancing-with-cute-face-illustration-hand-drawing-vector_772546-1024.jpg",
-    description:"This calculator can perform some basic operations and created using HTML,CSS and JavaScript."
-  },
   {
     title:"WeatherWave",
     source:"https://bharat235-beep.github.io/WeatherWave/",
@@ -28,15 +22,29 @@ const Project = () => {
     description:"This web application converts user's speech into text.Developed using React.js ."
   },
   {
-    title:"TextUtils",
-    source:"https://bharat235-beep.github.io/text-utils/",
-    image:"https://onlinetexttools.com/images/legends/text/what-are-online-text-tools.png",
-    description:"This web application performs some basic operations on text.Developed using React.js"
-  },{
+    title:"Task Manager",
+    source:"https://task-manager-gamma-liart.vercel.app/",
+    image:"https://static.vecteezy.com/system/resources/thumbnails/000/963/090/small/cartoon-man-with-to-do-list-on-clipboard.jpg",
+    description:"Created a task-management application using Next.js which is also consists of authentication system."
+  },
+  {
     title:"CRUD Application",
     source:"https://crud-user-frontend.vercel.app/",
     image:"https://www.freecodecamp.org/news/content/images/size/w2000/2022/06/crud.png",
     description:"This web application performs basic CRUD(Create,Read,Update,Delete) operations and developed using MERN(MongoDb,Express.js,React.js,Node.js)."
+  },
+  {
+    title:"TextUtils",
+    source:"https://bharat235-beep.github.io/text-utils/",
+    image:"https://onlinetexttools.com/images/legends/text/what-are-online-text-tools.png",
+    description:"This web application performs some basic operations on text.Developed using React.js"
+  },
+  ,
+  {
+    title:"Calculator",
+    source:"https://bharat235-beep.github.io/calculator/",
+    image:"https://img.freepik.com/premium-vector/calculator-cartoon-character-dancing-with-cute-face-illustration-hand-drawing-vector_772546-1024.jpg",
+    description:"This calculator can perform some basic operations and created using HTML,CSS and JavaScript."
   }
 ]
   return (
