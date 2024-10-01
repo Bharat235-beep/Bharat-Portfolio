@@ -1,6 +1,6 @@
 import { useInView,motion } from 'framer-motion';
 import React, { useRef } from 'react'
-
+import Resume from '/BharatKumar.pdf'
 const About = () => {
   const ref=useRef(null);
   const isInView=useInView(ref,{margin:'0px',once:true})
@@ -27,7 +27,7 @@ const About = () => {
       
       </ul>
 
-      <a  href='src/assets/Resume.jpeg' download="Res.jpg"><button type="button" className='text-yellow-300 bg-blue-800 rounded-lg hover:bg-slate-700'> Download Resume</button></a>
+      <a  href={Resume} download="Resume.pdf"><button type="button" className='text-yellow-300 bg-blue-800 rounded-lg hover:bg-slate-700'> Download Resume</button></a>
     </motion.div>
   )
 }
